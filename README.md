@@ -7,6 +7,8 @@ All section are build dynamically, with a dynamically updating navigational menu
 
 ![demo](demo.gif)
 
+You can view a live demo at [Vercel deployment platform](https://landing-page-kappa-ruddy.vercel.app/).
+
 # Usage
 
 Just clone the project and open it in any modern browser.
