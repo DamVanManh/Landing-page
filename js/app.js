@@ -99,8 +99,11 @@ const activeStyleSectionAndNav = () => {
 
 // Scroll to anchor ID using scrollTO event
 const scrollIntoSec = (evt) => {
-  const section = document.getElementById(`${evt.target.dataset.targetid}`);
-  section.scrollIntoView({ behavior: "smooth" });
+  const targetEle = evt.target;
+  if (targetEle.nodeName.toLowerCase() === "li") {
+    const sectionEle = document.getElementById(`${targetEle.dataset.targetid}`);
+    sectionEle.scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 // Hide fixed navigation bar
